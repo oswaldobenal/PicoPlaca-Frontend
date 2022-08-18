@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: max-content;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 5px 10px 15px ;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnEdit {
+  display: block;
+  color: black;
+  padding: 5px 10px;
+  margin-top: 5px;
+  border-radius: 15px;
+  background: #2ECC71;
+  border: none;
+  font-size: 15px;
+}
+
+.btnEdit:hover {
+  background: #32db78;
+
+}
