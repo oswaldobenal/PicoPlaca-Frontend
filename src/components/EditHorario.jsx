@@ -8,7 +8,9 @@ export const EditHorario = () => {
   const [data, setData] = useState({});
   const { id } = useParams();
   const getDetail = async (id) => {
-    const apiData = await axios.get(`http://localhost:5000/api/detail/${id}`);
+    const apiData = await axios.get(
+      `https://picoplaca-jb.herokuapp.com/api/detail/${id}`
+    );
     setData(apiData.data);
   };
   useEffect(() => {

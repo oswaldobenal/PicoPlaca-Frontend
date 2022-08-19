@@ -32,7 +32,7 @@ const VerifyPlaca = () => {
         onSubmit={async (valores, { resetForm }) => {
           try {
             await axios
-              .post("http://localhost:5000/api/verify", valores)
+              .post("https://picoplaca-jb.herokuapp.com/api/verify", valores)
               .then((res) => alert(res.request.response));
             // setValidation(false);
             resetForm();

@@ -44,7 +44,7 @@ const CreateRestriction = () => {
         onSubmit={async (valores, { resetForm }) => {
           try {
             await axios
-              .post("http://localhost:5000/api/horapico", valores)
+              .post("https://picoplaca-jb.herokuapp.com/api/horapico", valores)
               .then((res) => alert(res.request.response));
             navigate("/");
           } catch (error) {

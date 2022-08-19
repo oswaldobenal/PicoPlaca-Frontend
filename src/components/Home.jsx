@@ -8,7 +8,9 @@ function Home() {
   const [restriction, setRestriction] = useState([]);
 
   const getRestrictions = async () => {
-    const apiInfo = await axios.get("http://localhost:5000/api/horapico");
+    const apiInfo = await axios.get(
+      "https://picoplaca-jb.herokuapp.com/api/horapico"
+    );
     const data = apiInfo.data.map((el) => el);
     setRestriction(data);
   };

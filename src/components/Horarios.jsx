@@ -5,7 +5,7 @@ import styles from "./styles/horario.module.css";
 export const Horarios = ({ dia, placa1, placa2, hinicio, hfin, id }) => {
   const handleClick = async (e) => {
     await axios
-      .delete(`http://localhost:5000/api/restriction/${id}`)
+      .delete(`https://picoplaca-jb.herokuapp.com/api/restriction/${id}`)
       .then((res) => alert(res.request.response));
     window.location.reload();
   };

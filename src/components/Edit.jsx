@@ -24,7 +24,7 @@ export const Edit = ({ dia, placa1, placa2, hinicio, hfin, id }) => {
     e.preventDefault();
     try {
       await axios
-        .patch(`http://localhost:5000/api/horapico/${id}`, {
+        .patch(`https://picoplaca-jb.herokuapp.com/api/horapico/${id}`, {
           placaUno: data.placaUno.length ? data.placaUno : placa1,
           placaDos: data.placaDos.length ? data.placaDos : placa2,
           hora_inicio: data.hora_inicio.length ? data.hora_inicio : hinicio,
